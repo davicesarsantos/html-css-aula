@@ -1,4 +1,4 @@
-# HTML CSS Aula
+# HTML CSS
 
 A modern and minimalist website built with HTML, CSS and JavaScript.
 
