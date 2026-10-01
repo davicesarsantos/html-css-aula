@@ -1,0 +1,464 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    min-height: 100vh;
+
+    overflow-x: hidden;
+
+    background: #050505;
+
+    color: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    position: relative;
+}
+
+
+/* =========================
+   FUNDO
+========================= */
+
+.background {
+    position: fixed;
+
+    inset: 0;
+
+    overflow: hidden;
+
+    z-index: 0;
+}
+
+
+/* =========================
+   VETORES
+========================= */
+
+.vector {
+    position: absolute;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    transform: rotate(45deg);
+
+    transition: transform 0.15s ease-out;
+
+    pointer-events: none;
+}
+
+
+/* Vetor 1 */
+
+.vector-1 {
+    top: -100px;
+
+    left: -80px;
+
+    width: 400px;
+
+    height: 400px;
+}
+
+
+/* Vetor 2 */
+
+.vector-2 {
+    top: 20%;
+
+    right: -150px;
+
+    width: 500px;
+
+    height: 500px;
+}
+
+
+/* Vetor 3 */
+
+.vector-3 {
+    bottom: -200px;
+
+    left: 20%;
+
+    width: 450px;
+
+    height: 450px;
+}
+
+
+/* Vetor 4 */
+
+.vector-4 {
+    top: 50%;
+
+    left: 40%;
+
+    width: 180px;
+
+    height: 180px;
+
+    opacity: 0.5;
+}
+
+
+/* Vetor 5 */
+
+.vector-5 {
+    bottom: 10%;
+
+    right: 15%;
+
+    width: 250px;
+
+    height: 250px;
+
+    opacity: 0.4;
+}
+
+
+/* =========================
+   PRIMEIRA PÁGINA
+========================= */
+
+.container {
+    position: relative;
+
+    z-index: 2;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px;
+}
+
+
+/* TÍTULO */
+
+.container h1 {
+    font-size: 72px;
+
+    font-weight: 700;
+
+    letter-spacing: -3px;
+
+    margin-bottom: 20px;
+}
+
+
+/* TEXTO */
+
+.container p {
+    font-size: 24px;
+
+    color: #999;
+
+    margin-bottom: 40px;
+}
+
+
+/* =========================
+   BOTÃO GET STARTED
+========================= */
+
+.button {
+    display: inline-block;
+
+    padding: 14px 32px;
+
+    background: white;
+
+    color: #050505;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+
+.button:hover {
+    transform: translateY(-4px);
+
+    background: #e8e8e8;
+
+    box-shadow: 0 10px 40px rgba(255, 255, 255, 0.15);
+}
+
+
+/* =========================
+   SEGUNDA PÁGINA
+========================= */
+
+.page-two {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    min-height: 100vh;
+
+    padding: 80px 40px;
+
+    margin: auto;
+}
+
+
+/* =========================
+   TAG
+========================= */
+
+.tag {
+    display: inline-block;
+
+    padding: 8px 14px;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 20px;
+
+    color: #888;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   TÍTULO DA SEGUNDA PÁGINA
+========================= */
+
+.page-two h1 {
+    font-size: 64px;
+
+    line-height: 1.05;
+
+    letter-spacing: -3px;
+
+    margin-bottom: 25px;
+}
+
+
+.page-two h1 span {
+    color: #777;
+}
+
+
+/* =========================
+   DESCRIÇÃO
+========================= */
+
+.description {
+    max-width: 600px;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #888;
+
+    margin-bottom: 50px;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    max-width: 1000px;
+}
+
+
+.card {
+    position: relative;
+
+    padding: 30px;
+
+    min-height: 190px;
+
+    background: rgba(255, 255, 255, 0.025);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 16px;
+
+    backdrop-filter: blur(10px);
+
+    transition: 0.3s;
+}
+
+
+.card:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(255, 255, 255, 0.25);
+
+    background: rgba(255, 255, 255, 0.05);
+}
+
+
+/* NÚMERO */
+
+.card .number {
+    font-size: 12px;
+
+    color: #555;
+
+    letter-spacing: 2px;
+}
+
+
+/* TÍTULO DO CARD */
+
+.card h2 {
+    font-size: 24px;
+
+    margin-top: 25px;
+
+    margin-bottom: 10px;
+}
+
+
+/* TEXTO DO CARD */
+
+.card p {
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    color: #777;
+
+    margin: 0;
+}
+
+
+/* =========================
+   BOTÃO BACK
+========================= */
+
+.back-button {
+    display: block;
+
+    width: fit-content;
+
+    margin: 30px auto 0;
+
+    padding: 13px 24px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 8px;
+
+    background: rgba(255, 255, 255, 0.04);
+
+    backdrop-filter: blur(10px);
+
+    transition: 0.3s;
+}
+
+
+.back-button:hover {
+    background: white;
+
+    color: #050505;
+
+    transform: translateY(-4px);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    position: fixed;
+
+    right: 30px;
+
+    bottom: 20px;
+
+    color: #666;
+
+    font-size: 14px;
+
+    z-index: 3;
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 800px) {
+
+    .page-two {
+        padding: 50px 25px;
+    }
+
+
+    .page-two h1 {
+        font-size: 45px;
+    }
+
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    .container h1 {
+        font-size: 55px;
+    }
+
+
+    .container p {
+        font-size: 20px;
+    }
+
+}
